@@ -1,0 +1,93 @@
+.edit-button .icon{
+  display:inline-block;
+  position:relative;
+  user-select:none;
+}
+.edit-button .icon > svg{
+  height:13px;
+  width:13px;
+}
+.tab-section .edit-button{
+  display:flex;
+  margin-left:auto;
+  cursor:pointer;
+  color:rgb(0, 174, 217);
+}
+.tab-section .edit-button:hover span{
+  color:rgb(1, 141, 192);
+}
+.edit-button .text{
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center;
+  margin-left:0.9em;
+  font-size:12px;
+  font-weight:700;
+  text-align:center;
+}
+
+.tab-section .title{
+  font-weight:700;
+  font-size:14px;
+  text-transform:uppercase;
+  color:rgb(24, 53, 88);
+}
+.tab-section .field{
+  display:flex;
+  margin-bottom:1em;
+}
+.tab-section .label{
+  color:rgb(24, 53, 88);
+  flex:1 1 0%;
+}
+.tab-section .value{
+  flex:2 1 0%;
+  color:rgb(117, 121, 137);
+}
+.tab-section{
+  display:flex;
+  flex-flow:column;
+  width:100%;
+}
+.tab-section .heading{
+  display:flex;
+  border-bottom:1px solid rgb(217, 221, 233);
+  padding-bottom:0.8em;
+  margin-bottom:1.6em;
+}
+.tab-section:not(:first-of-type){
+  margin-top:3em;
+}
+.page-title{
+  padding:40px 30px 30px;
+  border-bottom:1px solid rgb(217, 221, 233);
+  margin-bottom:37px;
+  display:flex;
+  -webkit-box-pack:justify;
+  justify-content:space-between;
+  flex-direction:column;
+}
+@media (min-width: 768px){
+  .page-title{
+    padding:42px 41px 30px;
+    margin-bottom:40px;
+  }
+}
+@media (min-width: 1024px){
+  .page-title{
+    flex-direction:row;
+  }
+}
+.page-title-caption{
+  font-size:22px;
+  line-height:22px;
+  font-weight:700;
+  text-transform:uppercase;
+  color:rgb(24, 53, 88);
+}
+@media (min-width: 768px){
+  .page-title-caption{
+    font-size:28px;
+    line-height:28px;
+  }
+}

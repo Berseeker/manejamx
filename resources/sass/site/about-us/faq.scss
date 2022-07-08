@@ -1,0 +1,53 @@
+.head {
+  max-width: 50%; margin-left: auto; margin-right: auto
+}
+
+@media (max-width: 768px){
+  .head {
+    max-width: 100%; margin-left: auto; margin-right: auto
+  }
+}
+
+#accordion {
+  margin: 0 150px;
+}
+
+@media (max-width: 1024px){
+  #accordion {
+    margin: 40px;
+  }
+}
+
+@media (max-width: 768px){
+  #accordion {
+    margin: 0;
+  }
+}
+
+#accordion .title {
+  color: rgb(24, 53, 88) !important;
+}
+
+.card-header {
+  cursor: pointer;
+  padding: 1.5rem 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: 0;
+}
+
+.card-body {
+  padding: 0 0 1.5rem 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(117, 121, 137);
+}
+
+.card {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+svg {
+  transform: rotate(180deg);
+}

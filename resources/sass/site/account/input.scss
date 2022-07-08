@@ -1,0 +1,102 @@
+.input-container {
+  .error {
+    color: rgb(255, 113, 113) !important;
+  }
+  .input-is-invalid {
+    border-color: rgb(255, 113, 113) !important;
+  }
+  .input-status-icon-is-invalid {
+    color: rgb(255, 113, 113) !important;
+    fill: rgb(255, 113, 113) !important;
+  }
+  .input-status-icon {
+    color:rgb(29, 208, 139);
+    fill:rgb(29, 208, 139);
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:20px !important;
+    height:20px !important;
+  }
+  .input:focus ~ .input-status-icon{
+    display:none;
+  }
+  .input-wrapper{
+    display:flex;
+    position:relative;
+    background-color:rgb(255, 255, 255) !important;
+    border-radius:3px;
+  }
+  .input {
+    box-sizing:border-box;
+    height:56px;
+    width:100%;
+    background:rgb(244, 248, 250) !important;
+    border:1px solid rgb(217, 221, 233);
+    flex:1 1 0%;
+    border-radius:3px;
+    outline:none;
+    font-size:16px;
+    line-height:20px;
+    font-weight:500;
+    color:rgb(24, 53, 88);
+    padding:14px 19px 0px;
+  }
+  .input:disabled{
+    cursor:not-allowed;
+    background:rgb(244, 248, 250);
+  }
+  .input:focus{
+    border:1px solid rgb(0, 174, 217);
+  }
+  .input:focus ~ label{
+    top:-20px;
+    color:rgb(0, 174, 217);
+    font-size:12px;
+  }
+  .input.is-populated ~ label{
+    font-size:12px;
+    top:-20px;
+  }
+  .input:not(:-webkit-autofill){
+    animation-name:onAutoFillCancel;
+  }
+  .input-label {
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    -webkit-box-align: center;
+    align-items: center;
+    top: 0px;
+    bottom: 0px;
+    left: 19px;
+    cursor: text;
+    margin: 0px auto;
+    color: rgb(117, 121, 137);
+    transition: all 150ms ease-in-out 0s;
+  }
+  .input-container{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+  }
+  @media only screen and (min-width: 768px){
+    .input-container{
+      flex-wrap:nowrap;
+    }
+  }
+  .input-container:not(:last-of-type){
+    margin-bottom:1em;
+  }
+  .input-column {
+    display:flex;
+    flex-flow:column;
+    flex:1 1 0%;
+
+  }
+
+
+}

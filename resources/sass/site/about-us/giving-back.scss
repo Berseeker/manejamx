@@ -1,0 +1,41 @@
+
+.text {
+  margin: 0 120px;
+}
+
+@media (max-width: 1366px){
+  .text {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 1024px){
+  .text {
+    margin: 0;
+  }
+}
+
+.text h1 {
+  text-transform: initial;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(24, 53, 88);
+  font-weight: 600;
+}
+
+.text p {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(117, 121, 137);
+  font-weight: 300;
+}
+
+.text a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(0, 174, 217) !important;
+  text-decoration-line: underline !important;
+}

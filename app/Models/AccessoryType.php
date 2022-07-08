@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class AccessoryType extends Model
+{
+    use HasFactory;
+    use SoftDeletes;
+
+    protected $guarded = [];
+
+    /* relations */
+
+    public function accessories()
+    {
+        return $this->hasMany(Accessory::class, 'type_id');
+    }
+
+    /* scopes */
+
+    public function scopeSearch($query)
+    {
+        return $query->when(request()->filled('search'), function($query){
+            $query->where('name', 'LIKE', '%'.request()->search.'%');
+        });
+    }
+
+    public function scopeWithTrash($query)
+    {
+        return $query->when(request()->filled('with_trash'), function($query){
+            $query->withTrashed();
+        });
+    }
+}
